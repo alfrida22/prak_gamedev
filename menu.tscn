@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmbm6kdr22r74"]
+
+[ext_resource type="Texture2D" uid="uid://bxj07bgvdwd5l" path="res://Asset/Ppt background.jpeg" id="1_bf0q7"]
+[ext_resource type="Script" path="res://menu.gd" id="1_j13ho"]
+[ext_resource type="AudioStream" uid="uid://882bepuqula" path="res://Asset/8-bit-background-music-for-arcade-game-come-on-mario-164702.mp3" id="3_8ejmo"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_j13ho")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(578, 321.75)
+scale = Vector2(1.56522, 1.3167)
+texture = ExtResource("1_bf0q7")
+
+[node name="MarginContainer" type="MarginContainer" parent="Sprite2D"]
+offset_left = -122.667
+offset_top = -109.174
+offset_right = 134.333
+offset_bottom = 95.8256
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Sprite2D/MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Sprite2D/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Sprite2D/MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85098, 0, 0.337255, 1)
+theme_override_colors/font_hover_color = Color(1, 0.509804, 0.443137, 1)
+theme_override_font_sizes/font_size = 50
+text = "New Game"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 493.0
+offset_top = 68.0
+offset_right = 642.0
+offset_bottom = 161.0
+text = "Game Bella"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_8ejmo")
+autoplay = true
+
+[connection signal="button_up" from="Sprite2D/MarginContainer/VBoxContainer/MarginContainer/Button" to="." method="_on_button_button_up"]

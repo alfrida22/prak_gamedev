@@ -1,0 +1,179 @@
+[gd_scene load_steps=36 format=3 uid="uid://b0fltcbv1d34s"]
+
+[ext_resource type="Texture2D" uid="uid://ck7jxitfw7737" path="res://Asset/Wolf/Wolf/Run right/__Wolf_Run_000.png" id="1_0egjf"]
+[ext_resource type="Script" path="res://node_2d.gd" id="1_1qr8x"]
+[ext_resource type="Texture2D" uid="uid://celq0pp8v4t60" path="res://Asset/Wolf/Wolf/Attack/__Wolf_Attack_000.png" id="1_ledgq"]
+[ext_resource type="Texture2D" uid="uid://bcoxu2i280v14" path="res://Asset/Wolf/Wolf/Dead/__Wolf_Dead_000.png" id="1_lxaf8"]
+[ext_resource type="Texture2D" uid="uid://cvk3hjwov7x0g" path="res://Asset/Wolf/Wolf/Dead/__Wolf_Dead_001.png" id="2_lj03n"]
+[ext_resource type="Texture2D" uid="uid://bfl7mfir5lud5" path="res://Asset/Wolf/Wolf/Run right/__Wolf_Run_001.png" id="2_qn8wu"]
+[ext_resource type="Texture2D" uid="uid://16gdx5ofvvqe" path="res://Asset/Wolf/Wolf/Dead/__Wolf_Dead_002.png" id="3_nxokn"]
+[ext_resource type="Texture2D" uid="uid://baocs5ukpgjea" path="res://Asset/Wolf/Wolf/Run right/__Wolf_Run_002.png" id="3_yy5ow"]
+[ext_resource type="Texture2D" uid="uid://x31ki36ux1b7" path="res://Asset/Wolf/Wolf/Dead/__Wolf_Dead_003.png" id="4_i1bhb"]
+[ext_resource type="Texture2D" uid="uid://c641wlveo8i" path="res://Asset/Wolf/Wolf/Run right/__Wolf_Run_003.png" id="4_y5vgf"]
+[ext_resource type="Texture2D" uid="uid://ci2mfpcww37r5" path="res://Asset/Wolf/Wolf/Run right/__Wolf_Run_004.png" id="5_8nmyx"]
+[ext_resource type="Texture2D" uid="uid://d0e3ga8dp1sl6" path="res://Asset/Wolf/Wolf/Dead/__Wolf_Dead_004.png" id="5_33c6t"]
+[ext_resource type="Texture2D" uid="uid://c6no7s77xkcdn" path="res://Asset/Wolf/Wolf/Dead/__Wolf_Dead_005.png" id="6_8toc5"]
+[ext_resource type="Texture2D" uid="uid://bla2k2svbqvij" path="res://Asset/Wolf/Wolf/Run right/__Wolf_Run_005.png" id="6_h7rtn"]
+[ext_resource type="Texture2D" uid="uid://dt3ahcvdkkdlu" path="res://Asset/Wolf/Wolf/Run right/__Wolf_Run_006.png" id="7_81y5x"]
+[ext_resource type="Texture2D" uid="uid://3wwwv13donsx" path="res://Asset/Wolf/Wolf/Dead/__Wolf_Dead_006.png" id="7_ox4lx"]
+[ext_resource type="Texture2D" uid="uid://07d07pqxbdpj" path="res://Asset/Wolf/Wolf/Dead/__Wolf_Dead_007.png" id="8_m0v72"]
+[ext_resource type="Texture2D" uid="uid://dfk2nbvs5iw3a" path="res://Asset/Wolf/Wolf/Run right/__Wolf_Run_007.png" id="8_vb5ob"]
+[ext_resource type="Texture2D" uid="uid://ciypktih30m6o" path="res://Asset/Wolf/Wolf/Run left/__Wolf_Run_000.png" id="17_er48h"]
+[ext_resource type="Texture2D" uid="uid://d13v8g4uptjhv" path="res://Asset/Wolf/Wolf/Run left/__Wolf_Run_001.png" id="18_f1mo6"]
+[ext_resource type="Texture2D" uid="uid://blsh6e5go11i" path="res://Asset/Wolf/Wolf/Run left/__Wolf_Run_002.png" id="19_wvbyc"]
+[ext_resource type="Texture2D" uid="uid://cbve36ip6m386" path="res://Asset/Wolf/Wolf/Run left/__Wolf_Run_003.png" id="20_oe4qv"]
+[ext_resource type="Texture2D" uid="uid://cniwuu0hiwhnd" path="res://Asset/Wolf/Wolf/Run left/__Wolf_Run_004.png" id="21_tv53a"]
+[ext_resource type="Texture2D" uid="uid://1n1qnvfl4jlt" path="res://Asset/Wolf/Wolf/Run left/__Wolf_Run_005.png" id="22_nh2uc"]
+[ext_resource type="Texture2D" uid="uid://w8tom1opgjao" path="res://Asset/Wolf/Wolf/Run left/__Wolf_Run_006.png" id="23_82k41"]
+[ext_resource type="Texture2D" uid="uid://cnswij106lsgl" path="res://Asset/Wolf/Wolf/Run left/__Wolf_Run_007.png" id="24_ho6e0"]
+[ext_resource type="Texture2D" uid="uid://bqhma7876y3ms" path="res://Asset/Wolf/Wolf/Attack/__Wolf_Attack_001.png" id="27_f7jr2"]
+[ext_resource type="Texture2D" uid="uid://dhnj4smrp2rss" path="res://Asset/Wolf/Wolf/Attack/__Wolf_Attack_002.png" id="28_p35hp"]
+[ext_resource type="Texture2D" uid="uid://k50mqsastt8l" path="res://Asset/Wolf/Wolf/Attack/__Wolf_Attack_003.png" id="29_7jta5"]
+[ext_resource type="Texture2D" uid="uid://c4omovyiuqpa4" path="res://Asset/Wolf/Wolf/Attack/__Wolf_Attack_004.png" id="30_vrn1d"]
+[ext_resource type="Texture2D" uid="uid://dwcnp7r0j83t1" path="res://Asset/Wolf/Wolf/Attack/__Wolf_Attack_005.png" id="31_56d38"]
+[ext_resource type="Texture2D" uid="uid://b7yfnitl78w8e" path="res://Asset/Wolf/Wolf/Attack/__Wolf_Attack_006.png" id="32_4q0yg"]
+[ext_resource type="Texture2D" uid="uid://djt5c1k0voi57" path="res://Asset/Wolf/Wolf/Attack/__Wolf_Attack_007.png" id="33_po83w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qat1f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lxaf8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_lj03n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nxokn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_i1bhb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_33c6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8toc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ox4lx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_m0v72")
+}],
+"loop": true,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0egjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qn8wu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yy5ow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_y5vgf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8nmyx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_h7rtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_81y5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vb5ob")
+}],
+"loop": true,
+"name": &"kanan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_er48h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_f1mo6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_wvbyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_oe4qv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_tv53a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_nh2uc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_82k41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ho6e0")
+}],
+"loop": true,
+"name": &"kiri",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ledgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_f7jr2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_p35hp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_7jta5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_vrn1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_56d38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_4q0yg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_po83w")
+}],
+"loop": true,
+"name": &"loncat",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sjqqk"]
+size = Vector2(97, 67)
+
+[node name="player" type="CharacterBody2D"]
+position = Vector2(-1, 2)
+script = ExtResource("1_1qr8x")
+
+[node name="karakter" type="Sprite2D" parent="."]
+position = Vector2(474, 248)
+scale = Vector2(0.542969, 0.523438)
+
+[node name="WolfAttack000" type="Sprite2D" parent="."]
+position = Vector2(606, 228)
+scale = Vector2(0.736441, 0.751497)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(522.5, 334.125)
+scale = Vector2(0.233898, 0.23503)
+sprite_frames = SubResource("SpriteFrames_qat1f")
+animation = &"loncat"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(523.5, 367.5)
+shape = SubResource("RectangleShape2D_sjqqk")
