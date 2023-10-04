@@ -1,5 +1,5 @@
 extends ParallaxLayer
-@export var CLOUD_SPEED: float = 20
+@export var CLOUD_SPEED: float = 5
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

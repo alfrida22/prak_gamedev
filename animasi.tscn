@@ -7,12 +7,12 @@
 [node name="animasi" type="Node2D"]
 
 [node name="Jalan" parent="." instance=ExtResource("2_q6yc6")]
-position = Vector2(-102, 510)
+position = Vector2(0, 522)
 
 [node name="player" parent="." instance=ExtResource("1_no7ky")]
-position = Vector2(-474, 194)
+position = Vector2(-376, 204)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-position = Vector2(1043, 150)
+position = Vector2(987, 157)
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("3_fa8n4")]
