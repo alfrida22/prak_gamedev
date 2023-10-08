@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cltka784g6qx5"]
+[gd_scene load_steps=5 format=3 uid="uid://cltka784g6qx5"]
 
 [ext_resource type="PackedScene" uid="uid://b0fltcbv1d34s" path="res://node_2d.tscn" id="1_no7ky"]
 [ext_resource type="PackedScene" uid="uid://bflccng2qjgw7" path="res://jalan.tscn" id="2_q6yc6"]
 [ext_resource type="PackedScene" uid="uid://dcht5lcpm6u" path="res://baground.tscn" id="3_fa8n4"]
+[ext_resource type="PackedScene" uid="uid://iihhxc24r5uo" path="res://empty.tscn" id="4_b00be"]
 
 [node name="animasi" type="Node2D"]
 
@@ -16,3 +17,6 @@ position = Vector2(-376, 204)
 position = Vector2(987, 157)
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("3_fa8n4")]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("4_b00be")]
+position = Vector2(1, 501)

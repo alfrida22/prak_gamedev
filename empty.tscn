@@ -1,0 +1,72 @@
+[gd_scene load_steps=7 format=3 uid="uid://iihhxc24r5uo"]
+
+[ext_resource type="Script" path="res://empty.gd" id="1_02rew"]
+[ext_resource type="Texture2D" uid="uid://crrmmbu8k46tl" path="res://Asset/enemy-20231005T024635Z-001/enemy/enemy.png" id="1_lpgy3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6y2pt"]
+size = Vector2(24, 16)
+
+[sub_resource type="Animation" id="Animation_cbyjq"]
+resource_name = "diam"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.1, 2.4, 2.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [6, 7, 6, 7, 6, 7, 6, 7, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_spyoa"]
+resource_name = "jalan"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.6, 0.8, 1, 1.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8fmx3"]
+_data = {
+"diam": SubResource("Animation_cbyjq"),
+"jalan": SubResource("Animation_spyoa")
+}
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_02rew")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(270, 91)
+texture = ExtResource("1_lpgy3")
+hframes = 8
+frame = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(270, 91)
+shape = SubResource("RectangleShape2D_6y2pt")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_8fmx3")
+}
+
+[node name="PlatformDetector" type="RayCast2D" parent="."]
+position = Vector2(270, 98)
+
+[node name="FloorDetectorLeft" type="RayCast2D" parent="."]
+position = Vector2(258, 92)
+
+[node name="FloorDetectorRight" type="RayCast2D" parent="."]
+position = Vector2(282, 93)

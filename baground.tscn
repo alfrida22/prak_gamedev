@@ -15,38 +15,38 @@
 [node name="sky2" type="ParallaxLayer" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="sky2"]
-position = Vector2(1414.25, 186)
-scale = Vector2(2.43299, 1.25)
+position = Vector2(1292, 186)
+scale = Vector2(2.60278, 1.25)
 texture = ExtResource("1_3vih1")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 script = ExtResource("2_c13xr")
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
-position = Vector2(1403.5, 214)
-scale = Vector2(2.43958, 1.38333)
+position = Vector2(1285.5, 214)
+scale = Vector2(2.60347, 1.38333)
 texture = ExtResource("3_dq5xq")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
 script = ExtResource("4_u2gog")
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
-position = Vector2(1405, 375)
-scale = Vector2(2.43889, 1.4)
+position = Vector2(1287, 375)
+scale = Vector2(2.60278, 1.4)
 texture = ExtResource("5_erbj3")
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
 script = ExtResource("6_itd5x")
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
-position = Vector2(1401, 402)
-scale = Vector2(2.43889, 1.18333)
+position = Vector2(1285, 402)
+scale = Vector2(2.6, 1.18333)
 texture = ExtResource("7_2k2qu")
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
 script = ExtResource("8_tnpo6")
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
-position = Vector2(1404.5, 477)
-scale = Vector2(2.44236, 0.847656)
+position = Vector2(1288.5, 477)
+scale = Vector2(2.60347, 0.847656)
 texture = ExtResource("9_6mkdu")
